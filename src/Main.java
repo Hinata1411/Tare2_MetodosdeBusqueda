@@ -16,16 +16,16 @@ public class Main {
         //Instanciamos el método de Busqueda Binaria
         BusquedaBinaria buscarBin = new BusquedaBinaria();
 
-        //Pedimos al usuario que ingrese el número a buscar y lo guardamos en la variable x
+        //Pedimos al usuario que ingrese el número a buscar y lo guardamos en la variable buscar
         System.out.println("Ingrese el número a buscar: ");
         Scanner sr = new Scanner(System.in);
-        int x = sr.nextInt();
+        int buscar = sr.nextInt();
 
+        System.out.println("------BÚSQUEDA BINARIA------");
         //Creamos la variable resultadobin para guardar el resultado obtenido
         //y le implementamos el método busquedaBinaria colocandole como parámetros
-        //el arreglo y la variable x que es el dato a buscar
-        System.out.println("------BÚSQUEDA BINARIA------");
-        int resultadobin = buscarBin.busquedaBinaria(miarreglo, x);
+        //el arreglo y la variable buscar que es el dato a buscar
+        int resultadobin = buscarBin.busquedaBinaria(miarreglo, buscar);
         //Con un if verificamos si el número a buscar es igual a -1
         if(resultadobin == -1)
             //Si es igual a -1 significa que el número no existe y se muestra el siguiente mensaje
