@@ -5,7 +5,7 @@ public class BusquedaLineal {
     //Búsqueda de forma lineal o secuencial
     int busquedaLineal(int[] miarreglo, int datoabuscar){
         //Creamos una variable in llamada valor y la convertimos en Integer para que sea nula
-        int valor = Integer.parseInt(null);
+        int valor = -1;
         //Con un ciclo for recorremos el arreglo
         //Inciando con la variable i en 0, si i es menor al número total de datos i va aumentando de 1 en 1
         //hasta encontrar el número a buscar
